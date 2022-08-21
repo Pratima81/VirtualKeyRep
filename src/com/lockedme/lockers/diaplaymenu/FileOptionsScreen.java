@@ -138,7 +138,7 @@ public class FileOptionsScreen implements Screen{
         
         
         for(int i = 0; i < files.size(); i++) {
-			if(files.get(i).getName().equals(fileName)) {
+			if(files.get(i).getName().equalsIgnoreCase(fileName)) {
 				
 				System.out.println("["+fileName+ "] File Found in Directory");
 				found = true;
